@@ -1,0 +1,29 @@
+<html>
+  <head>
+  <title>Caesar Cipher</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <h1> Caesar Cipher</h1>
+  </head>
+
+  <body>
+  <p>
+  The Caesar Cipher replaces every character in a message with a letter that is a number of places up or down the alphabet.
+  </p>
+
+  <div id="form">
+  	<form method="POST" action="/">
+      <label for='input_text'>Message</label>
+  	  <textarea name='input_text' placeholder="Enter your message to caesar cipher here!" cols="30" rows="5"></textarea>
+      <label for='shift_factor'>Shift Factor</label>
+      <input type='number' name='shift_factor' />
+  	  <input type='submit' value='Cipher!' />
+  	</form>
+  </div>
+
+  <% if @cipher %>
+    <p>Your message is:</p>
+    <%= @cipher %>
+  <% end %>
+
+  </body>
+</html>

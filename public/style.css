@@ -1,0 +1,23 @@
+* {
+	font-family: "Times New Roman", Times, serif
+}
+
+input {
+	display: block;
+}
+
+input[type=submit] {
+	font-weight: bold;
+}
+
+label {
+	display: block;
+}
+
+textarea {
+	resize: none;
+}
+
+body {
+	background: #696969;
+}
